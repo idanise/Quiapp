@@ -1,0 +1,89 @@
+body {
+    font-family: Arial; 
+    background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+    background: 	-moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+    background: 	-ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+    background: 	-o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+    background: 	linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 3rem;
+    min-width: 80rem;
+    background: tomato;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(180, 70, 6, 0.6);
+    transform: transform 100ms;
+    transform: scale(1);
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: black; 
+}
+
+.choice-text {
+    padding: 2rem; 
+    width: 100%;
+}
+
+.correct {
+    background: green;
+}
+
+.incorrect {
+    background: red;
+}
+
+/** heads of display **/
+#question {
+    font-size: 4rem;
+}
+
+#hud {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#score {
+    border: 2px solid black;
+    padding: 0.5rem;
+}
+
+#progressBar {
+    width: 30rem; 
+    height: 3rem;
+    margin-top: 2rem;
+    border: 0.2rem solid rgb(11,223,36);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%; 
+    width: 0%; 
+    background: rgb(11,223,36)
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container{
+        min-width: 40rem;
+    }
+}
